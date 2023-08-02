@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.pict1 {background-image: url(../../assets/p1.jpg);}
+.pict2 {background-image: url(../../assets/p2.jpg);}
+.pict3 {background-image: url(../../assets/p3.jpg);}
+.pict4 {background-image: url(../../assets/p4.jpg);}
+.pict5 {background-image: url(../../assets/p5.jpg);}
+.pict6 {background-image: url(../../assets/p6.jpg);}
+.pict7 {background-image: url(../../assets/p7.jpg);}
+.pict8 {background-image: url(../../assets/p8.jpg);}
+.pict9 {background-image: url(../../assets/p9.jpg);}
+.pict10 {background-image: url(../../assets/p10.jpg);}
+
+.galery {
+   overflow: hidden;
+    margin: 0;
+    background: linear-gradient(0deg, #ccff7e 0%, #94ffce 100%);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+    top: 4.5rem;
+}
+
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #eb8c8c;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    filter: blur(4px);
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: clamp(1rem, 5vw, 5rem);
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background-color: #9cecd4;
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+}
+
+.slide.active {
+    flex: 10;
+    filter: blur(0px);
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* respons */
+
+@media screen and (max-width: 50rem) {
+
+    .container {
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .slide {
+        width: 90vw;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+}

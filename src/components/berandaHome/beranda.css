@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.beranda {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.textFilled, 
+.textOutline {
+    position: absolute;
+    text-transform: uppercase;
+    font-style: italic;
+    pointer-events: none;
+    color: #808080;
+    z-index: 1;
+    white-space: nowrap;
+    font-size: 5rem;
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.textOutline {
+    z-index: 3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    color: #888888;
+}
+
+.berandaImage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.berandaPicture {
+    z-index: 2;
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    object-position: 25% 95%;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    box-shadow: 10px;
+}
+
+.fathantext {
+    position: absolute;
+    top: 22.5rem;
+    left: -1600px;
+}
+.finkantext {
+    position: absolute;
+    top: 27rem;
+    left: -5px;
+}
