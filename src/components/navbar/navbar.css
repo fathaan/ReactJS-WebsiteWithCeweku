@@ -1,14 +1,17 @@
 nav {
     font-size: 1rem;
     z-index: 4;
-    color: var(--text2-color);
 }
 nav a {
-    color: #444444;
     font-weight: 800;
+    color: var(--text-color);
+}
+nav a:hover {
+    color: var(--kuning1-color);
+    transition: all 0.3s ease-in-out;
 }
 .navName {
-    color: rgb(24, 24, 24);
+    color: var(--kuning1-color);
     font-weight: 700;
     position: fixed;
     padding: 5px 5px 0px 5px;
@@ -20,7 +23,7 @@ nav a {
     line-height: 0.4rem;
     background-color: rgba(255, 255, 255, 0.021);
     border-radius: 10px;
-    border: 0.1px solid #858585;
+    border: 0.1px solid var(--kuning1-color);
     backdrop-filter: blur(2px); 
     z-index: 4;
     pointer-events: none;
@@ -75,10 +78,10 @@ p a {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(5px); 
 }
 .navMenuRight:hover,.navMenuAbout:hover, .navOurGallery:hover {
-    background-color: #858585;
+    background-color: #777777;
     padding: 1px 10px;
     border-radius: 35px;
     justify-content: center;
@@ -92,6 +95,14 @@ p a {
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 576px) {
+    nav a {
+        font-weight: 800;
+        color: var(--kuning1-color);
+    }
+    nav a:hover {
+        color: var(--text-color);
+        transition: all 0.3s ease-in-out;
+    }
     nav {
         width: 100%;
         display: flex;
@@ -113,9 +124,10 @@ p a {
         flex-direction: row;
         position: static;
         transition: all 0.01s ease-in-out;
+        backdrop-filter: blur(0px);
     }
     .navMenuRight:hover,.navMenuAbout:hover, .navOurGallery:hover {
-        background-color: #a8a8a8;
+        background-color: #777777;
         border-radius: 151px;
         line-height: 0.5rem;
     }
@@ -125,9 +137,9 @@ p a {
         position: fixed;
         z-index: 4;
         bottom: 1rem;
-        background-color: #858585;
+        background-color: #696969;
         border-radius: 55px;
-        border:1px solid #858585;
+        border:0.5px solid var(--bg1-color);
     }
 }
 @media screen and (max-width: 350px) {

@@ -4,8 +4,12 @@
 :root {
     --primary-color: #b1b1b1;
     --secondary-color: #dbdbdb;
-    --text-color: #d1d1d1;
-    --text2-color: #1f1f1f;
+    --text-color: #DEDEDE;
+    --kuning1-color: #f9c810;
+    --kuning2-color: #F9C825;
+    --bg1-color: #858585;
+
+
 }
 * {
     padding: 0;

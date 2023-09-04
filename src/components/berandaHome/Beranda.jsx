@@ -1,6 +1,6 @@
 import React from 'react'
 import './beranda.css'
-import profilepicture from '../../assets/profile-picture.jpg'
+import profilepicture from '../../assets/profile.mp4'
 import {motion, useScroll, useTransform} from "framer-motion"
 
 const Beranda = () => {
@@ -67,7 +67,7 @@ const Beranda = () => {
           </motion.h1>
         </div>
       <div className="berandaImage">
-        <motion.img
+        <motion.video
         initial={{y:2000,opacity:1}}
         animate={{
           y:0,
@@ -76,7 +76,7 @@ const Beranda = () => {
             delay:5.5,
           }
         }}
-         className="berandaPicture" src={profilepicture} alt="" />
+         className="berandaPicture" src={profilepicture} alt="" autoPlay="true" loop="true" muted="false"/>
       </div>
       </div>
     </section>

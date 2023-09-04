@@ -1,14 +1,16 @@
 .about {
-    background-color: var(--primary-color);
+    background-color: var(--bg1-color);
     width: 100%;
     height: 390px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -1rem;
+    color: var(--text-color);
 }
 .aboutTypo {
     position: absolute;
+    color: var(--kuning1-color);
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
@@ -20,38 +22,13 @@
     z-index: 1;
 }
 
-/* Finkan About */
-.aboutContentFinkan {
-    text-shadow: 3px 3px 14px#d3e5fc;
-    font-size: 1rem;
-    font-weight: bold;
-    z-index: 2;
-    width: 90%;
-    height: 130px;
-    text-align: center;
-    line-height: 1.2rem;
-    margin-bottom: 3rem;
-}
-.aboutContentFinkan img {
-    width: 30px;
-    margin-top: 3px;
-    margin-right: 10px;
-    padding: 1px;
-}
-.aboutContentFinkan img:hover {
-    background-color: rgb(252, 115, 137);
-    border-radius: 7px;
-    transition: all 0.5s ease-in-out;
-    padding: 1px;
-}
-
 /* Fathan About */
 .aboutContentFathan {
-    text-shadow: 3px 3px 14px#d3e5fc;
+    text-shadow: 3px 3px 14px#00000017;
     font-size: 1rem;
     font-weight: bold;
     z-index: 2;
-    width: 90%;
+    width: 65%;
     height: 130px;
     text-align: center;
     line-height: 1.2rem;
@@ -62,9 +39,12 @@
     margin-top: 3px;
     margin-right: 10px;
     padding: 1px;
+    background-color: var(--text-color);
+    border-radius: 7px;
+    margin-top: 11px;
 }
 .aboutContentFathan img:hover {
-    background-color: rgb(0, 136, 255);
+    background-color: var(--kuning1-color);
     border-radius: 7px;
     transition: all 0.5s ease-in-out;
     padding: 1px;
@@ -73,4 +53,9 @@ p{
     font-size: 0.9rem;
     margin-top: 7px;
     margin-bottom: 7px;
+}
+@media screen and (max-width: 576px) {
+    .aboutContentFathan {
+        width: 92%;
+    }
 }

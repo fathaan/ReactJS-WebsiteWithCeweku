@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--bg1-color);
 }
 
 .pict1 {background-image: url(../../assets/p1.jpg);}
@@ -48,7 +48,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     transition: all 0.7s ease-in-out;
-    filter: blur(4px);
+    filter: blur(3px);
 }
 
 .slide h3 {
@@ -69,11 +69,14 @@ body {
 .slide.active {
     flex: 10;
     filter: blur(0px);
+    border: 2px solid var(--kuning1-color);
+    box-shadow: 3px 3px 100px#1d1d1d;
 }
 
 .slide.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+    text-shadow: 3px 3px 14px#00000000;
 }
 
 /* respons */

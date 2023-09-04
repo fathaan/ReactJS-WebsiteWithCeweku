@@ -5,7 +5,7 @@
 }
 
 .beranda {
-    background-color: var(--primary-color);
+    background-color: var(--bg1-color);
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -19,7 +19,7 @@
     text-transform: uppercase;
     font-style: italic;
     pointer-events: none;
-    color: #808080;
+    color: var(--kuning1-color);
     z-index: 1;
     white-space: nowrap;
     font-size: 5rem;
@@ -29,7 +29,7 @@
     z-index: 3;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    color: #888888;
+    color: var(--kuning2-color);
 }
 
 .berandaImage {
@@ -43,10 +43,12 @@
     width: 310px;
     height: 310px;
     object-fit: cover;
-    object-position: 25% 95%;
-    border: 1px solid #9e9e9e;
-    border-radius: 10px;
+    object-position: 25% 85%;
+    border: 2px solid var(--kuning2-color);
+    border-radius: 8px;
     box-shadow: 10px;
+    pointer-events: none;
+    cursor: none;
 }
 
 .fathantext {
