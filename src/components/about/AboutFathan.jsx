@@ -6,9 +6,9 @@ const AboutFathan = () => {
   return (
     <section className='about' id='aboutFathanFinkan'>
       <div className="aboutTypo">
-        <span className="typoText">About Us About Us</span>
-        <span className="typoText">About Us About Us</span>
-        <span className="typoText">About Us About Us</span>
+        <span className="typoText">About Us</span>
+        <span className="typoText">About Us</span>
+        <span className="typoText">About Us</span>
       </div>
       <div className="aboutContentFathan">
         <h3 className="aboutIsi">
